@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 202%;
+  background-image: url("../Assets/info2.jpg");
+  background-size: 202% auto;
+  background-position: left;
+
+  display: fixed;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+
+  vertical-align: middle;
+
+  margin: 0;
+}
+
+/* p {
+  color: #fff;
+  font-size: 4vw;
+  font-family: monospace;
+} */

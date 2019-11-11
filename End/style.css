@@ -1,0 +1,163 @@
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab";
+@import "https://use.typekit.net/abr8jcz.css";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: blambot-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section {
+  background: white;
+  /* text-align: center; */
+  font-size: 5em;
+  /* font-family: "Roboto Slab", serif; */
+  color: white;
+}
+
+#bgimg {
+  background-image: url("../Assets/beerAni2.gif");
+  min-height: 100%;
+  min-width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.title1 {
+  color: #f3b461;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title2 {
+  text-align: center;
+  color: #f3b461;
+  width: 100%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.fp-tableCell {
+  vertical-align: top !important;
+}
+
+#wheat {
+  background-image: url("../Assets/step101.png");
+  height: 227px;
+  width: 151px;
+  margin-left: 10%;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+}
+
+#moveTo {
+  position: fixed;
+  display: inline-block;
+  margin-left: 26%;
+  z-index: 1;
+  cursor: pointer;
+  height: 311px;
+  width: 394px;
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+}
+
+#tank {
+  /* background-image: url("../Assets/step102.png"); */
+  position: relative;
+  height: 311px;
+  width: 394px;
+}
+
+#tofill {
+  margin-left: 6%;
+  position: absolute;
+  transform: rotate(120deg);
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.empty {
+  display: inline-block;
+  height: 250px;
+  width: 400px;
+  margin-top: 160px;
+}
+
+/* .hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+} */
+h2,
+p {
+  margin: 0;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.show-on-scroll {
+  transition: 0.6s all ease-in-out;
+}
+
+.slide-left {
+  transform: translate3d(100%, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -75px;
+  right: 20%;
+}
+
+.slide-right {
+  transform: translate3d(-100%, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -75px;
+  left: 20%;
+}
+
+.slidein.is-visible {
+  transform: translate3d(0, 0, 0);
+}
+
+.fadein {
+  opacity: 0;
+
+  &.is-visible {
+    animation: fadein 1s 0.5s forwards;
+
+    &.delay {
+      animation: fadein 1s 1s forwards;
+    }
+
+    &.delay2 {
+      animation: fadein 1s 2s forwards;
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
